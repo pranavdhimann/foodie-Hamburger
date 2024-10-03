@@ -1,0 +1,239 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f6f0eb;
+    font-family: poppins , sans-serif;
+    margin: 0;
+   
+}
+
+a{
+    text-decoration-line: none;
+}
+
+header{
+    background-color: white;
+    padding: 24px ;
+}
+
+.main-content{
+    overflow-x: hidden;
+    height: 100vh;
+    scroll-behavior: smooth;
+}
+
+.header-content{
+    max-width: 1290px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+    margin: 0 auto;
+}
+nav{
+    display: flex;
+}
+
+
+
+nav a+a{           /*  a+a ka mtlb first a ko chood ke sab par propery lag jaaegi */
+    margin-left: 60px;
+}
+
+nav a {
+    font-weight:700 ;
+    font-size: 20px;
+    color: #492118;
+}
+
+.logo{
+    width: 50px;
+}
+
+img{
+    width: 100%;
+}
+
+main{
+    padding: 0 24px;
+}
+
+.hero-section{
+    margin-top: 100px;
+}
+
+.hero-section p{
+    color: rgba(73, 33, 24, 1);
+    font-size: 24px;
+    text-align: center;
+}
+
+
+.img-container{
+    max-width: 1290px;
+    margin: 0 auto;   
+}
+
+.section .img-container{
+    max-width: 900px;
+}
+
+.section {
+    margin-top: 100px;
+}
+
+.section h2{
+    text-align: center;  
+    font-weight: 700;
+    color:rgba(73, 33, 24, 1);
+    font-size: 48px;
+}
+
+.go-to-top{
+    color:rgba(73, 33, 24, 1);
+    text-align: right;
+    max-width: 900px;
+    margin: 0 auto;
+    font-size: 32px;
+    margin-top: 80px;
+    color: inherit;
+}
+
+.go-to-top a{
+ text-decoration-line: underline;
+}
+
+.footer-text{
+    text-align: center;
+    color: #858585;
+    font-size: 24px;
+    margin-top: 32px;
+}
+
+.close-icon{
+    position:absolute;
+    top: 8px;
+    right: 12px;
+    cursor: pointer;
+    display: none;
+}
+
+.hamburger-icon{
+    font-size: 21px;
+    position: absolute;
+    bottom: 14px;
+    left: 24px;
+}
+
+.hamburger-menu{
+    width: 105px;
+    height: 108px;
+    position: absolute;
+    top: -55px;
+    right: -46px;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: white;
+    cursor: pointer;
+   
+}
+
+.hamburger-menu-container{
+    overflow: hidden;
+    position: relative;
+    width: 59px;
+    height: 57px;
+    display: none;
+}
+
+
+@media (max-width:1200px) {
+    nav a {
+    font-size: 16px;
+}
+nav a+a{           /*  a+a ka mtlb first a ko chood ke sab par propery lag jaaegi */
+    margin-left: 48px;
+}
+header{
+    padding: 16px 24px;
+}
+}
+
+
+@media (max-width:960px) {
+    nav a {
+    font-size: 14px;
+}
+nav a+a{           /*  a+a ka mtlb first a ko chood ke sab par propery lag jaaegi */
+    margin-left: 32px;
+}
+.hero-section{
+    margin-top: 32px;
+}
+.section{
+    margin-top: 42px;
+}
+
+.hero-section p{
+    font-size: 10px;
+}
+
+.section h2{
+    font-size: 24px;
+}
+}
+
+
+@media (max-width:768px) {
+    nav {
+ position: absolute;
+ background: rgba(255, 255, 255, 0.9);
+ flex-direction: column;
+ right: -220px;
+top: 28px;
+padding: 24px;
+transition: right 0.25s ease-in-out;
+
+}
+header{
+    background-color: #f6f0ebe4;
+    backdrop-filter: blur(8px);
+    position: sticky;
+    padding: 8px 16px;
+    top: 0;
+}
+.header-content{
+    min-height:40px ;
+}
+nav a+a {
+    margin: 0;
+    margin-top: 16px;
+}
+.close-icon,.hamburger-menu-container{
+    display: block;
+}
+
+
+.menu-open nav{
+    right: 24px;
+}
+
+.menu-open .hamburger-menu-container{
+    display: none;
+}
+
+.go-to-top{
+    font-size: 12px;
+    margin-top: 40px;
+}
+
+.footer-text{
+    font-size: 10px;
+    margin-top: 30px;
+}
+
+
+
+}
